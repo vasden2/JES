@@ -1,0 +1,94 @@
+
+C:\cygwin\home\dorn\workspace\mediacomp-jes\jes\Sources\Tests>"java" "-Dpython.home=..\..\jython-2.2.1" "-Dpython.path=.;.." -classpath "..\..\jython-2.2.1\jython.jar;..\..\Sources;.;.." -Xmx128m org.python.util.jython TestExecute.py "..\..\jython-2.2.1" 
+['TestExecute.py', '..\\..\\jython-2.2.1']
+Second argument should be Jython's path
+C:\cygwin\home\dorn\workspace\mediacomp-jes\jes\Sources\Tests
+['Test_Picture_BMP.py', 'Test_Picture_BOOK.py', 'Test_Picture_GIF.py', 'Test_Picture_JPG.py', 'Test_Picture_NEW.py', 'Test_Pixel.py', 'Test_SimpleSound.py', 'Test_Sound_BookExamples.py']
+['', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\jython-2.2.1\\Lib', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources\\Tests', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources', '__classpath__', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\jython-2.2.1', '..\\..\\jython-2.2.1/Lib', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources\\Tests', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources\\Tests/..']
+Run Tests on SimpleSound()
+Run Tests on SimpleSound(3 Seconds)
+Run Tests on SimpleSound(8 Seconds)
+Run Tests on SimpleSound(0 Seconds)
+Run Tests on SimpleSound(-1 Seconds)
+Run Tests on SimpleSound(100 Seconds)
+Run Tests on SimpleSound(16 Bits, SmallEndian)
+Run Tests on SimpleSound(8 Bits, SmallEndian)
+Run Tests on SimpleSound(16 Bits, BigEndian)
+Run Tests on SimpleSound(8 Bits, BigEndian)
+Run Tests on SimpleSound(SimpleSound 3secs)
+Run Tests on SimpleSound(SimpleSound 5secs)
+Run Tests on SimpleSound(SimpleSound ALAW_ENCODING )
+Run Tests on SimpleSound(SimpleSound PCM_SIGNED_ENCODING )
+Run Tests on SimpleSound(SimpleSound PCM_UNSIGNED_ENCODING )
+Run Tests on SimpleSound(SimpleSound ULAW )
+Run Tests on SimpleSound(SimpleSound 22.05K SamplingRate )
+Run Tests on SimpleSound(SimpleSound 5K SamplingRate )
+Run Tests on SimpleSound(SimpleSound 16 SampleSize )
+Run Tests on SimpleSound(SimpleSound 8 SampleSize )
+Run Tests on SimpleSound(SimpleSound 1 Channel )
+Run Tests on SimpleSound(SimpleSound 2 Channel )
+Run Tests on SimpleSound(SimpleSound 2 FrameSize )
+Run Tests on SimpleSound(SimpleSound 1 FrameSize )
+Run Tests on SimpleSound(SimpleSound 22K FrameRate )
+Run Tests on SimpleSound(SimpleSound 5K FrameRate )
+Run Tests on SimpleSound(SimpleSound small endian )
+Run Tests on SimpleSound(SimpleSound small endian )
+Run Tests on SimpleSound(SimpleSound frameLength )
+Run Tests on SimpleSound(SimpleSound frameLength )
+Run Tests on SimpleSound(SimpleSound Blip )
+Run Tests on SimpleSound(File testSound )
+Run Tests on AsArray
+Run Tests on Buffer
+Run Tests on from Book
+Temporarily disabled by timmy because it is annoying
+Temporarily disabled by timmy because it is annoying
+Temporarily disabled by timmy because it is annoying
+changing
+comparing
+You are trying to access the sample at index: 10234, but the last valid index is at 10233
+You are trying to access the sample at index: 10234, but the last valid index is at 10233
+You are trying to access the sample at index: 10234, but the last valid index is at 10233
+Done
+
+C:\cygwin\home\dorn\workspace\mediacomp-jes\jes\Sources\Tests>"java" "-Dpython.home=..\..\jython-2.2.1" "-Dpython.path=.;.." -classpath "..\..\jython-2.2.1\jython.jar;..\..\Sources;.;.." -Xmx128m org.python.util.jython TestExecute.py "..\..\jython-2.2.1" 
+['TestExecute.py', '..\\..\\jython-2.2.1']
+Second argument should be Jython's path
+C:\cygwin\home\dorn\workspace\mediacomp-jes\jes\Sources\Tests
+['Test_Picture_BMP.py', 'Test_Picture_BOOK.py', 'Test_Picture_GIF.py', 'Test_Picture_JPG.py', 'Test_Picture_NEW.py', 'Test_Pixel.py', 'Test_SimpleSound.py', 'Test_Sound_BookExamples.py']
+['', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\jython-2.2.1\\Lib', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources\\Tests', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources', '__classpath__', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\jython-2.2.1', '..\\..\\jython-2.2.1/Lib', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources\\Tests', 'C:\\cygwin\\home\\dorn\\workspace\\mediacomp-jes\\jes\\Sources\\Tests/..']
+Run Tests on SimpleSound()
+Run Tests on SimpleSound(3 Seconds)
+Run Tests on SimpleSound(8 Seconds)
+Run Tests on SimpleSound(0 Seconds)
+Run Tests on SimpleSound(-1 Seconds)
+Run Tests on SimpleSound(100 Seconds)
+Run Tests on SimpleSound(16 Bits, SmallEndian)
+Run Tests on SimpleSound(8 Bits, SmallEndian)
+Run Tests on SimpleSound(16 Bits, BigEndian)
+Run Tests on SimpleSound(8 Bits, BigEndian)
+Run Tests on SimpleSound(SimpleSound 3secs)
+Run Tests on SimpleSound(SimpleSound 5secs)
+Run Tests on SimpleSound(SimpleSound ALAW_ENCODING )
+Run Tests on SimpleSound(SimpleSound PCM_SIGNED_ENCODING )
+Run Tests on SimpleSound(SimpleSound PCM_UNSIGNED_ENCODING )
+Run Tests on SimpleSound(SimpleSound ULAW )
+Run Tests on SimpleSound(SimpleSound 22.05K SamplingRate )
+Run Tests on SimpleSound(SimpleSound 5K SamplingRate )
+Run Tests on SimpleSound(SimpleSound 16 SampleSize )
+Run Tests on SimpleSound(SimpleSound 8 SampleSize )
+Run Tests on SimpleSound(SimpleSound 1 Channel )
+Run Tests on SimpleSound(SimpleSound 2 Channel )
+Run Tests on SimpleSound(SimpleSound 2 FrameSize )
+Run Tests on SimpleSound(SimpleSound 1 FrameSize )
+Run Tests on SimpleSound(SimpleSound 22K FrameRate )
+Run Tests on SimpleSound(SimpleSound 5K FrameRate )
+Run Tests on SimpleSound(SimpleSound small endian )
+Run Tests on SimpleSound(SimpleSound small endian )
+Run Tests on SimpleSound(SimpleSound frameLength )
+Run Tests on SimpleSound(SimpleSound frameLength )
+Run Tests on SimpleSound(SimpleSound Blip )
+Run Tests on SimpleSound(File testSound )
+Run Tests on AsArray
+Run Tests on Buffer
+Run Tests on from Book
+Terminate batch job (Y/N)? 

@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>JES Help</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+</head>
+<body style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+	<p>Welcome to the Jython Environment for Students (JES), Version 3.1! We have made several changes since 
+	our last release, so take a look around. Some of these changes were implemented thanks to work done at Kalamazoo College. All changes in this version are listed below.</p>
+
+	<a href="#environment">Environment</a><br>
+	<a href="#io">Input/Output</a><br>
+	<a href="#files">Files</a><br>
+	<a href="#pictures">Pictures</a><br>
+	<a href="#sounds">Sounds</a><br>
+	<a href="#movies">Movies</a><br>
+	<a href="#turtles">Turtles</a><br>
+	<a href="#debug">Debugging</a><br>
+	<hr>
+	
+	<a name="environment"><b>Environment</b></a><br>
+	<br>
+	<ul>
+		<li>JES now runs using the latest version of Jython, version 2.2.1, which comes included with JES.</li>
+		<li>JES also comes packaged with the latest Java JRE.</li>
+		<li>The homework assignment turn-in tool has been removed.</li>
+		<li>Redo functionality has been added to the program area to go along with Undo.</li>
+		<li><code>true</code> and <code>false</code> constants have been added.</li>
+		<li>Color value wrap-around is now an option available under Edit--&gt;Options. When turned on,
+			RGB values outside the 0-255 range will be wrapped around using modulus division. When
+			turned off, RGB values will be capped at 0 and 255.</li>
+		<li>Also available under Edit--&gt;Options is a backup save function. When selected, JES will
+			save a duplicate file in the same folder with the extension <i>.pybak</i>.</li>
+	</ul>
+	<hr>
+
+	<a name="io"><b>Input/Output</b></a><br>
+	<br>
+	<ul>
+		<li>Python <code>input()</code> and <code>raw_input()</code> now present users with dialog boxes for input.</li>
+	</ul>
+	<hr>
+	
+	<a name="files"><b>Files</b></a><br>
+	<br>
+	<ul>
+		<li><code>setMediaPath()</code> and <code>setMediaFolder()</code> can now take a directory path as input.
+		The old functionality of sending no arguments and getting a file chooser still works.</li>
+		<li>Using <code>getMediaPath()</code> or <code>getMediaFolder()</code> with no arguments now returns the
+		current media folder.</li>
+		<li>The new method <code>setLibPath()</code> adds a folder to the user's Python path, so that user-created
+		modules can be imported. Like <code>setMediaPath()</code> and <code>setMediaFolder()</code>, this method
+	        works with no arguments or with a directory path as input.</li>
+
+	</ul>
+	<hr>
+
+	<a name="pictures"><b>Pictures</b></a><br>
+	<br>
+	<ul>
+		<li>There are four new methods for adding shapes to pictures:<br>
+		<code>
+			addArc(), addArcFilled(), addOval(), addOvalFilled()<br>
+		</code></li>
+		<li>Several methods now take a Color as an optional parameter. These include:<br>
+		<code>
+			addLine()<br>
+			addRect()<br>
+			addRectFilled()<br>
+			addText()<br>
+			addTextWithStyle()<br>
+			makeEmptyPicture()<br>
+
+		</code>
+		as well as the new methods listed above.</li>
+		<li><code>show()</code> now repaints automatically.</li>
+		<li><code>getPixelAt()</code> is a new method with the same functionality as <code>getPixel()</code></li>
+		<li>The color setting methods (<code>setRed()</code>, <code>setGreen()</code>, <code>setBlue()</code>) now perform error checking
+		if the Color Wraparound option is deselected.</li>
+		<li>The Color Wraparound option can be temporarily activated or deactivated within a program using
+		<code>setColorWrapAround()</code> and <code>getColorWrapAround()</code>.</li>
+		<li>Color objects can now be added and subtracted. This is done by summing RGB values. RGB values outside
+		0-255 are handled by the Color Wraparound option.</li>
+		<li><code>crop()</code> and a more sophisticated <code>copyInto()</code> are available when using Object-Oriented notation.
+		These methods are not listed in the JES Functions menu.</li>
+		<li>The new <code>explore()</code> method will take a Picture object and open up the Picture Tool.</li>
+	</ul>
+	<hr>
+
+	<a name="sounds"><b>Sounds</b></a><br>
+	<br>
+	<ul>
+		<li><code>makeEmptySound()</code> now takes a number of samples instead of a number of seconds. To create
+		a sound in terms of seconds, use the new method <code>makeEmptySoundBySeconds()</code>. In addition, both
+		methods optionally take a sampling rate as a parameter along with the duration.</li>
+		<li><code>getSample()</code> and <code>setSample</code> have been replaced by <code>getSampleValue()</code>
+	       	and <code>setSampleValue()</code>.</li>
+		<li><code>getNumSamples()</code> is a new method that returns the number of samples in a sound, same as <code>getLength()</code>.</li>
+		<li><code>getDuration()</code> is a new method that returns the length of the sound in seconds.</li>
+		<li><code>stopPlaying()</code> is a new method that forces a sound to cease playback.</li>
+		<li>The new <code>explore()</code> method will take a Sound object and open up the Sound Tool.</li>
+		<li><code>copySoundInto()</code> and <code>cropSound()</code> are available when using Object-Oriented notation only. These methods
+		are not listed in the JES Functions menu.</li>
+		<li>The following six methods have been declared deprecated. Their functionality still exists within JES,
+		but there is no further reference to them in our help files and documentation.<br>
+		<code>playAtRate(), playAtRateDur(), playInRange(), blockingPlayInRange(), playAtRateInRange(), blockingPlayAtRateInRange()</code></li>
+	</ul>
+	<hr>
+
+	<a name="movies"><b>Movies</b></a><br>
+	<br>
+	<ul>
+		<li>The new <code>explore()</code> method will take a Movie object and open up the Frame Sequencer Tool.</li>
+		<li>There are two new methods for writing out movies. <code>writeAVI()</code> and <code>writeQuicktime()</code>
+		will write out movies in AVI and MOV formats respectively.</li>
+	</ul>
+	<hr>
+
+	<a name="turtles"><b>Turtles</b></a><br>
+	<br>
+	<ul>
+		<li><code>turnToFace()</code> can now take a turtle as input rather than (x,y) coordinates.</li>
+		<li><code>turn()</code> now takes a floating point number rather than an integer as input.</li>
+		<li>New method <code>getHeading()</code> now returns the heading of the turtle in degrees.<li>
+	</ul>
+	<hr>
+
+	<a name="debug"><b>Debugging</b></a><br>
+	<br>
+	<ul>
+		<li>The ability to pause and step through code using the Watcher has been disabled.</li>
+		<li>The method <code>showVars()</code> has been reintroduced. When called, a new window will
+		appear, showing the value and type of any variable available in the command area.</li>
+	</ul>
+</body>
+</html>
